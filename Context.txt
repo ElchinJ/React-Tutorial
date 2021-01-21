@@ -1,0 +1,53 @@
+Context helps to pass through multiple component to child component property to avoid pass property in every parent component. 
+Context property username='Chino'
+ComponentA => <ComponentB/>
+ComponentB => <ComponentC/>
+ComponentC => <UserConsumer> .... here is return value... <UserConsumer/>
+
+Steps:
+1. Create UserContex:
+	const UserContex = React.createContext()
+
+	const UserProvider = UserContex.Provider
+	const UserConsumer = UserContex.Consumer
+
+	export {UserProvider, UserConsumer}
+2. Add Provider in the top level: (in App.js)
+	<UserProvider value='Chino'>
+          	           <ComponentC/>
+        	</UserProvider>
+3. In the component where username is required: (in our case ComponentC)
+	<UserConsumer>
+                		{
+                    	     (username) => {
+                        	           return <div>Hello user { username}</div>
+                    	           }
+                		}
+            	</UserConsumer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+1.  if/else
+2. Element variables
+3. Ternary conditional operator
+4. Short circuit operator
+
+1. if/else
+In Constructor:
+this.state = {
+             isLoggedIn: false
+        }
+In Render():
+if (this.state.isLoggedIn) {
+            return <div>Welcome Chino</div>
+        } else {
+            return <div>Welcome guest</div>
+        }
+
+2. Element variables
+In Constructor same state as above. 
+In Render():
+let message
+        if (this.state.isLoggedIn) {
+            message = <div>Welcome Chino</div>
+        } else {
+            message = <div>Welcome guest</div>
+        }
+        return message
+
+3. Ternary conditional operator
+In Constractor same state as in example 1
+In Render():
+return (
+            this.state.isLoggedIn ? 
+                <div>Welcome Chino</div> :
+                <div>Welcome guest</div>
+        )
+
+4. Short circuit operator
+In Constructor same state as in example 1
+In Render():
+return this.state.isLoggedIn && <div>Welcome Chino</div>
+// it returns "Welcome Chino" if logged in. Otherwise it returns nothing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

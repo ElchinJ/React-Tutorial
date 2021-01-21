@@ -1,0 +1,11 @@
+Controlled component
+
+			this.state={
+			        email: ' '
+			}
+		
+		this.changeEmailHandler = (event) => {
+		        this.setState({email: event.target.value})
+		}
+
+<input type='text' value={this.state.email} onChange={this.changeEmailHandler} />

@@ -1,0 +1,44 @@
+There are 4 approaches to bind eventHandler. 
+
+1 approach: Use .bind(this)
+<button onClick={this.sayGoodbye.bind(this)}>Click to say goodbye</button>
+
+2 approach: Arrow function approach
+<button onClick={() => this.sayGoodbye()}>Click to say goodbye</button>
+
+3 approach: Binding with Constructor
+Add this line in the Constuctor: 
+this.sayGoodbye = this.sayGoodbye.bind(this)
+And in the render() method:
+<button onClick={this.sayGoodbye}>Click to say goodbye</button>
+
+4 approach: rewrite sayGoodbye() function
+sayGoodbye = () => {
+	this.setState({
+	    message: 'Goodbay now'
+	})
+}
+And same code in the render() method:
+<button onClick={this.sayGoodbye}>Click to say goodbye</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

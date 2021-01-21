@@ -1,0 +1,18 @@
+-- Types of components 
+// -- simple stateless function component -- 
+function Greet() {
+     return <h1>stateless function component</h1>
+ }
+
+// -- arrow function -- 
+const Greet = () => {
+    return <h3>Arrow function component</h3>
+}
+
+// -- class component -- 
+// if we use props in class then we use 'this' keyword
+class Welcome extends Component {
+    render() { 
+        return <h1>Class component</h1>;
+    }
+}

@@ -1,0 +1,5 @@
+1. CSS stylesheets
+2. Inline styling
+3. CSS modules
+4. CSS in JS libraries (Styled Components recommended)
+

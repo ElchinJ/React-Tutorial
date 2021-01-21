@@ -1,0 +1,8 @@
+-- Props --				-- State -- 
+Props get passed to the component	State is managed within the component
+Function parameters 			Variable declared in the function body
+Props are immutable (cannot be changed)   State can be changed
+Props can be accessed with parameters:	State can be accessed using hooks:
+props - Functional Components		useState hook - Funcional Components
+this.props - Class Components		this.state - Class Componets		
+

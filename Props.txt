@@ -1,0 +1,2 @@
+In function component and arrow function we use props.propertyName
+In class component we use 'this' keyword e.g. this.props.propertyName

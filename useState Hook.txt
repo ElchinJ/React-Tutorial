@@ -1,0 +1,23 @@
+Teh useState hook lets you add state to functional components. 
+In classes, the state is always an object. 
+With the useState hook, the state doesnt have to be an object. 
+The useState hook returs an array with 2 elements:
+	const [count, setCount] = useState(initialCount)
+The first element is the current value of teh state, and the second element is a state setter function. 
+New state value depends on the previous state value? You can pass a function to the setter function. 
+When dealing with objects or arrays, always make sure to spread ( ...name) your state variable and then call the setter function. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
